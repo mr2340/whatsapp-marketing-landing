@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Meta Tags for WhatsApp/Social Media Sharing -->
     <meta property="og:title" content="FREE WhatsApp Marketing Class - OLA-EASY">
     <meta property="og:description" content="Learn how to earn ₦100k - ₦250k monthly with your smartphone.">
     <meta property="og:image" content="1004690981.jpg">
 
     <title>Free Training | OLA-EASY</title>
-    
+
     <!-- Premium Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
     <style>
         :root {
             --primary-green: #25D366;
@@ -32,10 +34,11 @@
         }
 
         body {
-            background-color: #111;
+            background: radial-gradient(circle at top right, #1a1a1a, #000);
             display: flex;
             justify-content: center;
             min-height: 100vh;
+            color: #333;
         }
 
         .page-container {
@@ -46,7 +49,55 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+            transition: max-width 0.3s ease;
+        }
+
+        @media (min-width: 1024px) {
+            .page-container {
+                max-width: 1100px;
+                margin: 40px auto;
+                min-height: 90vh;
+                border-radius: 24px;
+                overflow: hidden;
+                flex-direction: row;
+                /* Side by side */
+            }
+
+            .brand-header {
+                text-align: left;
+                padding: 25px 30px;
+            }
+
+            .desktop-flex {
+                display: flex;
+                width: 100%;
+                min-height: 100%;
+            }
+
+            .hero-section {
+                flex: 0 0 50%;
+                height: 100%;
+                position: sticky;
+                top: 0;
+                background: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .hero-img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .main-content-wrapper {
+                flex: 0 0 50%;
+                background: white;
+                overflow-y: auto;
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         .brand-header {
@@ -97,6 +148,12 @@
             margin-bottom: 20px;
             color: var(--text-dark);
             text-transform: uppercase;
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 2.2rem;
+            }
         }
 
         .headline-accent {
@@ -175,13 +232,31 @@
             display: inline-block;
         }
 
-        .bouncing-arrow:nth-child(2) { animation-delay: 0.2s; }
-        .bouncing-arrow:nth-child(3) { animation-delay: 0.4s; }
+        .bouncing-arrow:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .bouncing-arrow:nth-child(3) {
+            animation-delay: 0.4s;
+        }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-10px);}
-            60% {transform: translateY(-5px);}
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
         }
 
         /* BUTTON SECTION */
@@ -289,7 +364,7 @@
             background: white;
             padding: 12px 20px;
             border-radius: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             display: flex;
             align-items: center;
             gap: 12px;
@@ -321,99 +396,135 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="page-container">
-        <!-- Header -->
-        <header class="brand-header">
-            <div class="brand-logo">OLA-EASY</div>
-        </header>
-
-        <!-- Hero Flyer Image -->
-        <section class="hero-section">
-            <img src="1004690981.jpg" alt="WhatsApp Marketing Training" class="hero-img" onerror="this.src='https://via.placeholder.com/600x600?text=WhatsApp+Marketing+Flyer'">
-        </section>
-
-        <!-- Top Content Section -->
-        <main class="content-body">
-            <div class="urgency-badge">🔥 LIMITED: Only <span id="spots">14</span> Slots Left</div>
-            
-            <h1>
-                HIT YOUR FIRST <span class="headline-accent">₦100,000–₦250,000</span> Within 27 Days Marketing On WhatsApp...
-            </h1>
-            
-            <p class="sub-headline">
-                Without Burning Your Hard Earned Money, Even As A Complete Beginner.
-            </p>
-
-            <!-- Countdown Timer -->
-            <div class="countdown-box">
-                <span class="timer-title">FREE Access Offer Expires In:</span>
-                <div class="timer-grid">
-                    <div class="timer-item"><span id="hr">02</span><label>Hrs</label></div>
-                    <div class="timer-item"><span id="mn">45</span><label>Min</label></div>
-                    <div class="timer-item"><span id="sc">00</span><label>Sec</label></div>
-                </div>
-            </div>
-
-            <!-- Pointer for the Button -->
-            <div class="pointer-section">
-                <p class="pointer-text">Click the big button below to join for FREE now</p>
-                <div class="arrows-wrapper">
-                    <div class="bouncing-arrow">
-                        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M11 5v11.17l-4.88-4.88c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l6.59 6.59c.39.39 1.03.39 1.42 0l6.59-6.59c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L13 16.17V5c0-.55-.45-1-1-1s-1 .45-1 1z"/></svg>
-                    </div>
-                    <div class="bouncing-arrow">
-                        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M11 5v11.17l-4.88-4.88c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l6.59 6.59c.39.39 1.03.39 1.42 0l6.59-6.59c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L13 16.17V5c0-.55-.45-1-1-1s-1 .45-1 1z"/></svg>
-                    </div>
-                    <div class="bouncing-arrow">
-                        <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M11 5v11.17l-4.88-4.88c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l6.59 6.59c.39.39 1.03.39 1.42 0l6.59-6.59c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L13 16.17V5c0-.55-.45-1-1-1s-1 .45-1 1z"/></svg>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- CTA BUTTON SECTION -->
-        <div class="cta-container">
-            <a href="https://wa.me/2340000000000?text=Hello%20Ola-Easy,%20I%20want%20to%20join%20the%20FREE%20WhatsApp%20Marketing%20Training." class="btn-join" id="whatsapp-btn">
-                CLICK HERE TO JOIN NOW
-                <span class="btn-subtext">Secure your free spot in 5 seconds</span>
+        <div class="desktop-flex">
+            <!-- Hero Flyer Image -->
+            <a href="https://chat.whatsapp.com/LtBZTK5D00T8GMKcHSE6oi" target="_blank" rel="noopener noreferrer"
+                class="hero-section">
+                <img src="1004690981.jpg" alt="WhatsApp Marketing Training" class="hero-img"
+                    onerror="this.src='https://via.placeholder.com/800x1200?text=WhatsApp+Marketing+Flyer'">
             </a>
+
+            <div class="main-content-wrapper">
+                <!-- Header -->
+                <header class="brand-header">
+                    <div class="brand-logo">OLA-EASY</div>
+                </header>
+
+                <!-- Top Content Section -->
+                <main class="content-body">
+                    <div class="urgency-badge">Limited Slots Left...</div>
+
+                    <h1>
+                        HIT YOUR FIRST <span class="headline-accent">₦100,000–₦250,000</span> Within 27 Days Marketing
+                        On
+                        WhatsApp...
+                    </h1>
+
+                    <p class="sub-headline">
+                        Without Burning Your Hard Earned Money, Even As A Complete Beginner.
+                    </p>
+
+                    <!-- Countdown Timer -->
+                    <div class="countdown-box">
+                        <span class="timer-title">FREE Access Offer Expires In:</span>
+                        <div class="timer-grid">
+                            <div class="timer-item"><span id="hr">02</span><label>Hrs</label></div>
+                            <div class="timer-item"><span id="mn">45</span><label>Min</label></div>
+                            <div class="timer-item"><span id="sc">00</span><label>Sec</label></div>
+                        </div>
+                    </div>
+
+                    <!-- Pointer for the Button -->
+                    <div class="pointer-section">
+                        <p class="pointer-text">Click the big button below to join for FREE now</p>
+                        <div class="arrows-wrapper">
+                            <div class="bouncing-arrow">
+                                <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M11 5v11.17l-4.88-4.88c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l6.59 6.59c.39.39 1.03.39 1.42 0l6.59-6.59c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L13 16.17V5c0-.55-.45-1-1-1s-1 .45-1 1z" />
+                                </svg>
+                            </div>
+                            <div class="bouncing-arrow">
+                                <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M11 5v11.17l-4.88-4.88c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l6.59 6.59c.39.39 1.03.39 1.42 0l6.59-6.59c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L13 16.17V5c0-.55-.45-1-1-1s-1 .45-1 1z" />
+                                </svg>
+                            </div>
+                            <div class="bouncing-arrow">
+                                <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M11 5v11.17l-4.88-4.88c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l6.59 6.59c.39.39 1.03.39 1.42 0l6.59-6.59c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L13 16.17V5c0-.55-.45-1-1-1s-1 .45-1 1z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- CTA BUTTON SECTION -->
+                <div class="cta-container">
+                    <a href="https://chat.whatsapp.com/LtBZTK5D00T8GMKcHSE6oi" target="_blank" rel="noopener noreferrer"
+                        class="btn-join" id="whatsapp-btn">
+                        CLICK HERE TO JOIN NOW
+                        <span class="btn-subtext">Secure your free spot in 5 seconds</span>
+                    </a>
+                </div>
+
+                <!-- CLASS OUTLINE (MOVED AFTER BUTTON) -->
+                <section class="outline-section">
+                    <div class="outline-title">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10.392A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804V4.804A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z">
+                            </path>
+                        </svg>
+                        WHAT YOU WILL LEARN:
+                    </div>
+
+                    <div class="outline-item">
+                        <div class="check-circle">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"
+                                viewBox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div class="item-text">Increase your WhatsApp status views to 1.5K+ attracting the right
+                            audience.
+                        </div>
+                    </div>
+
+                    <div class="outline-item">
+                        <div class="check-circle">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"
+                                viewBox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div class="item-text">Master lead generation & sales strategies that make selling easy on
+                            WhatsApp.
+                        </div>
+                    </div>
+
+                    <div class="outline-item">
+                        <div class="check-circle">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"
+                                viewBox="0 0 24 24">
+                                <path d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div class="item-text">Learn how to convert, grow, & dominate the WhatsApp marketplace.</div>
+                    </div>
+                </section>
+
+                <!-- Final Footer -->
+                <footer class="footer-branding">
+                    <p>Powered by <a href="#" class="ghd-link">GHDcodes</a></p>
+                </footer>
+            </div>
         </div>
-
-        <!-- CLASS OUTLINE (MOVED AFTER BUTTON) -->
-        <section class="outline-section">
-            <div class="outline-title">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10.392A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804V4.804A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
-                WHAT YOU WILL LEARN:
-            </div>
-            
-            <div class="outline-item">
-                <div class="check-circle">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <div class="item-text">Increase your WhatsApp status views to 1.5K+ attracting the right audience.</div>
-            </div>
-
-            <div class="outline-item">
-                <div class="check-circle">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <div class="item-text">Master lead generation & sales strategies that make selling easy on WhatsApp.</div>
-            </div>
-
-            <div class="outline-item">
-                <div class="check-circle">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <div class="item-text">Learn how to convert, grow, & dominate the WhatsApp marketplace.</div>
-            </div>
-        </section>
-
-        <!-- Final Footer -->
-        <footer class="footer-branding">
-            <p>Powered by <a href="#" class="ghd-link">GHDcodes</a></p>
-        </footer>
     </div>
 
     <!-- Social Proof Toast -->
@@ -426,8 +537,8 @@
         // Timer Logic
         let h = 2, m = 45, s = 0;
         function timer() {
-            if(s > 0) s--;
-            else { s = 59; if(m > 0) m--; else { m = 59; h--; } }
+            if (s > 0) s--;
+            else { s = 59; if (m > 0) m--; else { m = 59; h--; } }
             document.getElementById('hr').innerText = h.toString().padStart(2, '0');
             document.getElementById('mn').innerText = m.toString().padStart(2, '0');
             document.getElementById('sc').innerText = s.toString().padStart(2, '0');
@@ -437,7 +548,7 @@
         // Slots
         let slots = 14;
         setInterval(() => {
-            if(slots > 3) {
+            if (slots > 3) {
                 slots -= Math.floor(Math.random() * 2);
                 document.getElementById('spots').innerText = slots;
             }
@@ -460,4 +571,5 @@
         setInterval(showToast, 9000);
     </script>
 </body>
+
 </html>
